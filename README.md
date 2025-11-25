@@ -1,16 +1,50 @@
-# React + Vite
+# Sumit Roy – Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive developer portfolio built with **React**, **Vite**, and **Tailwind CSS**.  
+This site showcases my skills, projects, and experience as a **Software Engineer / MERN Developer / DevOps Engineer**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## React Compiler
+**Live Site:** _coming soon_
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🧑‍💻 About the Project
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This portfolio is designed to be simple, fast, and recruiter-friendly.  
+It highlights:
+
+- Who I am and what I do
+- My core technical skills
+- My major projects (MERN + DevOps)
+- Links to my GitHub, LinkedIn, and resume
+
+---
+
+## ✨ Features
+
+- Clean, dark, modern UI
+- Responsive layout (works on mobile, tablet, desktop)
+- Smooth section-based navigation (Home, Skills, Projects)
+- Downloadable resume button
+- Social links (GitHub, LinkedIn, Email)
+- Clearly presented skills grouped by category
+- Project cards with tech stack, description, and external links
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend**
+
+- React (Vite)
+- JavaScript (ES6+)
+- Tailwind CSS
+
+**Styling & UI**
+
+- Tailwind utility classes
+- Responsive grid & flex layout
+- Dark theme design
