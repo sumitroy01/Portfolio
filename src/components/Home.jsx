@@ -24,7 +24,7 @@ export default function Home() {
               <div className="absolute inset-0 rounded-full bg-indigo-500/40 blur-2xl" />
               <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-indigo-400 shadow-xl">
                 <img
-                  src="src/assets/OIP.jpg"
+                  src="/assets/OIP.jpg"
                   alt="Sumit Roy"
                   className="w-full h-full object-cover"
                 />
