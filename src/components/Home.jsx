@@ -91,7 +91,7 @@ export default function Home() {
           {/* BUTTONS */}
           <div className="flex flex-wrap items-center gap-4 mb-4">
             <a
-              href="/Sumit_Roy_Resume.pdf"
+              href="/assets/Sumit-Resume.pdf"
               download
               className="inline-flex items-center px-5 py-2.5 text-sm font-semibold rounded-lg bg-indigo-500 hover:bg-indigo-400 text-white shadow-lg shadow-indigo-500/30 transition"
             >
