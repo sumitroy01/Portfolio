@@ -6,51 +6,64 @@ export default function Projects() {
   return (
     <section id="projects" className="py-16 border-t border-gray-800/60">
       <div className="max-w-7xl mx-auto px-4">
-        
+
         {/* HEADER */}
         <div className="mb-10 text-center md:text-left">
           <p className="text-xs uppercase tracking-[0.3em] text-indigo-400 mb-2">
             Projects
           </p>
           <h2 className="text-2xl sm:text-3xl font-semibold text-white mb-3">
-            Things I've built
+            Things I've Built
           </h2>
           <p className="text-sm sm:text-base text-gray-400 max-w-2xl">
-            A collection of my most meaningful MERN stack and DevOps projects.
+            Full-stack and DevOps-focused projects built with scalability,
+            automation, and production-grade architecture in mind.
           </p>
         </div>
 
-        {/* PROJECT CARDS */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
 
-          {/* -------------------- Donation App -------------------- */}
+          {/* ================= DONATION APP ================= */}
           <div className="rounded-2xl bg-gray-900/60 border border-gray-800 p-6 shadow-md">
             <h3 className="text-xl font-semibold text-white mb-2">
-              Donation App (MERN + Razorpay)
+              Donation Platform — MERN Stack
             </h3>
+
             <p className="text-sm text-gray-400 mb-4">
-              A full-stack donation system where users can register, browse donation 
-              requests, and donate securely using Razorpay (test mode). Created with 
-              authentication, dashboards, and a modern UI.
+              A full-featured donation platform enabling users to register, browse
+              causes, and donate securely. Built with scalable backend architecture,
+              role-based access, and payment integration.
             </p>
 
             <div className="text-xs text-gray-300 mb-4 flex flex-wrap gap-2">
-              {["React", "Node.js", "MongoDB", "Express", "Razorpay", "JWT Auth"].map((t) => (
-                <span
-                  key={t}
-                  className="px-3 py-1 rounded-full bg-gray-800 border border-gray-700"
-                >
+              {[
+                "React",
+                "Node.js",
+                "Express",
+                "MongoDB",
+                "JWT Authentication",
+                "Razorpay",
+              ].map((t) => (
+                <span key={t} className="px-3 py-1 rounded-full bg-gray-800 border border-gray-700">
                   {t}
                 </span>
               ))}
             </div>
 
-            <div className="flex items-center gap-4 mt-4">
+            <div className="mt-4 text-xs text-gray-500 space-y-1">
+              <p>✔ Designed normalized MongoDB schemas (Users, Donations, Campaigns)</p>
+              <p>✔ Secure auth with JWT, protected routes & role-based access</p>
+              <p>✔ Integrated payment verification & webhook handling</p>
+              <p>✔ Dockerized backend & frontend services</p>
+              <p>✔ Kubernetes deployment with persistent volumes for MongoDB</p>
+            </div>
+
+            <div className="flex items-center gap-4 mt-5">
               <a
                 href="https://donate-v2.onrender.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-1 text-indigo-400 hover:text-indigo-300 text-sm transition"
+                className="flex items-center gap-1 text-indigo-400 hover:text-indigo-300 text-sm"
               >
                 <FiExternalLink /> Live Demo
               </a>
@@ -59,7 +72,7 @@ export default function Projects() {
                 href="https://github.com/sumitroy01/Donate-v2"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-1 text-gray-300 hover:text-white text-sm transition"
+                className="flex items-center gap-1 text-gray-300 hover:text-white text-sm"
               >
                 <FiGithub /> GitHub
               </a>
@@ -68,46 +81,52 @@ export default function Projects() {
                 href="https://hub.docker.com/r/sumitroy161/donate-app"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-1 text-gray-300 hover:text-white text-sm transition"
+                className="flex items-center gap-1 text-gray-300 hover:text-white text-sm"
               >
                 <FiExternalLink /> Docker Hub
               </a>
             </div>
-
-            <div className="mt-5 text-xs text-gray-500">
-              <p>Kubernetes deployment applied</p>
-              <p>Jenkins CI/CD pipeline integrated</p>
-            </div>
           </div>
 
-          {/* -------------------- Chatting App -------------------- */}
+          {/* ================= CHAT APP ================= */}
           <div className="rounded-2xl bg-gray-900/60 border border-gray-800 p-6 shadow-md">
             <h3 className="text-xl font-semibold text-white mb-2">
-              Real-time Chatting App (Sockets)
+              Real-Time Chat Application
             </h3>
+
             <p className="text-sm text-gray-400 mb-4">
-              A real-time chat application where users can log in, see all registered
-              users, chat one-on-one, and share images. Built with WebSockets for 
-              real-time message updates.
+              A real-time messaging platform supporting private chats, authentication,
+              and live message delivery using WebSockets.
             </p>
 
             <div className="text-xs text-gray-300 mb-4 flex flex-wrap gap-2">
-              {["React", "Node.js", "Express", "MongoDB", "Socket.io", "JWT Auth"].map((t) => (
-                <span
-                  key={t}
-                  className="px-3 py-1 rounded-full bg-gray-800 border border-gray-700"
-                >
+              {[
+                "React",
+                "Node.js",
+                "Socket.io",
+                "MongoDB",
+                "JWT Auth",
+                "REST APIs",
+              ].map((t) => (
+                <span key={t} className="px-3 py-1 rounded-full bg-gray-800 border border-gray-700">
                   {t}
                 </span>
               ))}
             </div>
 
-            <div className="flex items-center gap-4 mt-4">
+            <div className="mt-4 text-xs text-gray-500 space-y-1">
+              <p>✔ Designed real-time message flow using Socket.IO</p>
+              <p>✔ Optimized MongoDB schema for chat & message indexing</p>
+              <p>✔ Secure authentication & session handling</p>
+              <p>✔ Dockerized services for local & cloud deployment</p>
+            </div>
+
+            <div className="flex items-center gap-4 mt-5">
               <a
                 href="https://testzone-ob6b.onrender.com/"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-1 text-indigo-400 hover:text-indigo-300 text-sm transition"
+                className="flex items-center gap-1 text-indigo-400 hover:text-indigo-300 text-sm"
               >
                 <FiExternalLink /> Live Demo
               </a>
@@ -116,58 +135,64 @@ export default function Projects() {
                 href="https://github.com/sumitroy01/chatapp-v2"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-1 text-gray-300 hover:text-white text-sm transition"
+                className="flex items-center gap-1 text-gray-300 hover:text-white text-sm"
               >
                 <FiGithub /> GitHub
               </a>
 
-               <a
+              <a
                 href="https://hub.docker.com/r/sumitroy161/chat-app"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-1 text-gray-300 hover:text-white text-sm transition"
+                className="flex items-center gap-1 text-gray-300 hover:text-white text-sm"
               >
                 <FiExternalLink /> Docker Hub
               </a>
-
             </div>
           </div>
 
-          {/* -------------------- DevOps Case Study -------------------- */}
           <div className="rounded-2xl bg-gray-900/60 border border-gray-800 p-6 shadow-md lg:col-span-2">
-            <h3 className="text-xl font-semibold text-white mb-2">
-              DevOps Pipeline & Deployment Case Study
+          
+
+            <h3 className="text-xl font-semibold text-white mt-2 mb-2">
+              CI/CD Pipeline with Docker & Kubernetes
             </h3>
+
             <p className="text-sm text-gray-400 mb-4">
-              Implemented a full CI/CD pipeline using Jenkins and deployed the Donation 
-              App using Kubernetes on a containerized architecture. Automated builds, 
-              Docker image creation, and rolling updates.
+              End-to-end DevOps workflow implementing automated build, test, and deployment
+              pipelines using Jenkins, Docker, and Kubernetes for multiple microservices.
             </p>
 
             <div className="text-xs text-gray-300 mb-4 flex flex-wrap gap-2">
               {[
                 "Docker",
-                "Kubernetes",
+                "Docker Compose",
+                "Kubernetes (Kind)",
                 "Jenkins",
-                "AWS EC2",
-                "Docker Hub",
+                "GitHub Webhooks",
                 "CI/CD Automation",
+                "Microservices Architecture",
               ].map((t) => (
-                <span
-                  key={t}
-                  className="px-3 py-1 rounded-full bg-gray-800 border border-gray-700"
-                >
+                <span key={t} className="px-3 py-1 rounded-full bg-gray-800 border border-gray-700">
                   {t}
                 </span>
               ))}
             </div>
 
-            <div className="flex items-center gap-4 mt-4">
+            <div className="mt-4 text-xs text-gray-500 space-y-1">
+              <p>✔ Git push triggers Jenkins pipeline automatically</p>
+              <p>✔ Docker images built, tagged, and pushed to Docker Hub</p>
+              <p>✔ Kubernetes manifests manage deployments, services & volumes</p>
+              <p>✔ Rolling updates with zero downtime deployments</p>
+              <p>✔ Environment isolation using ConfigMaps & Secrets</p>
+            </div>
+
+            <div className="flex items-center gap-4 mt-5">
               <a
-                href="https://hub.docker.com/your-dockerhub"
+                href="https://hub.docker.com/r/sumitroy161"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-1 text-indigo-400 hover:text-indigo-300 text-sm transition"
+                className="flex items-center gap-1 text-indigo-400 hover:text-indigo-300 text-sm"
               >
                 <FiExternalLink /> Docker Hub
               </a>
@@ -176,7 +201,7 @@ export default function Projects() {
                 href="https://github.com/sumitroy01/Devops-Kubernetes"
                 target="_blank"
                 rel="noreferrer"
-                className="flex items-center gap-1 text-gray-300 hover:text-white text-sm transition"
+                className="flex items-center gap-1 text-gray-300 hover:text-white text-sm"
               >
                 <FiGithub /> GitHub
               </a>
