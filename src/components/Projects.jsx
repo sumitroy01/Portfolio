@@ -123,7 +123,7 @@ export default function Projects() {
 
             <div className="flex items-center gap-4 mt-5">
               <a
-                href="https://testzone-ob6b.onrender.com/"
+                href="https://testzone-hk33.onrender.com/"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-1 text-indigo-400 hover:text-indigo-300 text-sm"
